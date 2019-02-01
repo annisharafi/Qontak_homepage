@@ -1,0 +1,253 @@
+// font
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans|Playfair+Display')
+$body-font: 'Nunito Sans', sans-serif
+$title-font: 'Playfair Display', serif
+
+//color
+$premier: #278BFA
+$second: #B2D6FF
+$tersier: #264562;
+
+//general
+*
+    margin: 0
+    padding: 0
+    font-family: $body-font
+    
+
+.title
+    font-weight: 900
+    font-family: $title-font
+    font-size: 36px
+    letter-spacing: 0.02em
+    line-height: 3em
+    max-width: 450px
+   
+
+.body-text
+   font-size: 18px
+   line-height: 27px
+   font-weight: 500
+   line-height: 27px
+   letter-spacing: 0.05em
+
+.garis
+    width: 35px
+    background: $premier
+    height: 3px
+.button-solid
+    padding: 10px 40px
+    background-color: $premier
+    color: white
+    border-radius: 3px
+    width: 220px
+    text-align: center
+
+.button-rendah
+    color: $premier
+    background: $second
+    padding: 10px 40px
+    font-weight: 900
+    border-radius: 3px
+
+.button-border
+    color: $premier
+    border: 2px solid $premier
+    border-radius: 3px
+    font-weight: 900
+    padding: 10px 40px
+
+
+//navbar
+.navbar
+    margin-top: 25px
+    
+    a
+        text-decoration: none
+    .sign-in
+        position: relative
+        right: -20%
+        a
+            margin-right: 30px
+            color: #000000
+    .register
+        padding: 10px 50px
+        border-radius: 3px
+        position: relative
+        right: -20%
+        background-color: $premier
+        a
+            color: #ffffff
+
+@media only screen and (max-width: 600px)
+    .navbar
+        box-shadow: none!important
+        .sign-in
+            right: 0
+        .register
+            right: 0
+            padding: 10px 10px
+
+
+//header
+.front
+    padding-top: 50px
+    
+
+    .field
+        padding: 30px 0px 0px 0px 
+    .front-pic
+        content: ""
+        background-image: url("../asset/frontpic.png")
+        width: 900px
+        height: 600px
+        position: relative
+        right: -100px
+        overflow: hidden
+    
+    input
+        border-color: #768695
+        height: 64px
+        width: 460px
+    .pict-mobile
+        display: none
+
+@media only screen and (max-width: 600px)
+    .front
+        .front-pic
+            display: none
+        .pict-mobile
+            display: block
+
+
+//our partner   
+.partner
+    margin-top: 50px
+    display: flex
+    align-items: center
+    a
+        text-decoration: none
+        color: $premier
+
+
+//services
+.services
+    margin-top: 100px
+    .detail
+        padding-left: 50px   
+    .plus
+        padding-bottom: 40px
+    
+    
+    a
+        text-decoration: none
+        margin-top: 10px
+    
+
+//more-people
+.more-people
+    margin-top: 200px
+    .pict-people
+        display: none
+    a
+        text-decoration: none
+        p
+            margin: 10px 0
+    .person
+        position: relative
+        content: ""
+        width: 100px
+        height: 100px
+        background:
+            color: pink
+            position: center center
+            size: cover
+        border-radius: 50%
+        
+        &:hover
+            transform: scale(1.2)
+            box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.4)
+        &:nth-child(1)
+            width: 75px
+            height: 75px
+            left: 10%
+            background-image: url("../asset/adult-beach-beard-736716.jpg")
+        &:nth-child(2)
+            top: 50px 
+            background-image: url("../asset/alex-holyoake-361916-unsplash.jpg")
+            left: 90%
+        &:nth-child(3)
+            left: 30%
+            background-image: url("../asset/beard-boy-casual-1222271.jpg")
+            width: 200px
+            height: 200px  
+        &:nth-child(4)
+            width: 150px
+            height: 150px
+            background-image: url("../asset/face-facial-hair-fine-looking-614810.jpg")
+            left: 50%
+            bottom: 50%
+        &:nth-child(5)
+            width: 80px
+            height: 80px
+            background-image: url("../asset/florian-perennes-1169691-unsplash.jpg")
+            left: 80%
+            bottom: 15%
+        &:nth-child(6)
+            width: 120px
+            height: 120px
+            background-image: url("../asset/beautiful-casual-cute-372042.jpg")
+            bottom: 40%
+        &:nth-child(7)
+            width: 125px
+            height: 125px
+            left: 40%
+            bottom: 30%
+            background-image: url("../asset/beautiful-blur-blurred-background-733872.jpg")
+    .button-rendah,.button-border
+        text-transform: capitalize
+        text-align: center
+
+@media only screen and (max-width: 600px)
+    .more-people
+        .pict-people
+            display: block
+        .person
+            display: none
+
+
+//footer
+footer
+    margin-top: 100px
+    padding: 50px 
+    background-color: #264562
+    color: white
+    
+    .title-bawah
+        font:
+            family: $title-font
+            size: 36px
+        letter-spacing: 0.05em
+    .button-solid
+        position: relative
+        float: right
+        bottom: 50px
+    .menuu
+        margin-top: 75px
+        padding-bottom: 50px
+        text-transform: capitalize
+        ul
+            p
+                padding-bottom: 10px
+            li
+                padding-bottom: 5px
+                a
+                    text-decoration: none
+                    color: white
+
+@media only screen and (max-width: 600px)
+    footer
+        .button-solid
+            position: relative
+            top: 25px
+            left: -60px
